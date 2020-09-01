@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Functions in JavaScript</h2> 
+
+<p id="demo"></p>
+
+<script>
+var myObject = {
+  firstName:"Jeremy",
+  lastName: "Clarkson",
+  fullName: function() {
+    return this.firstName + " " + this.lastName;
+  }
+}
+x = myObject.fullName();
+document.getElementById("demo").innerHTML = x; 
+</script>
+
+</body>
+</html>
+
+
