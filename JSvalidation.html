@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+  <script type="text/javascript">
+    function validate() 
+
+    {
+      var number = document.getElementById("Phone Number");
+      var Sub1 = document.getElementById("dbms");
+      var Sub2 = document.getElementById("dsa");
+      var Sub3 = document.getElementById("iot");
+
+
+      if (number.value=="" || Sub1.value=="" || Sub2.value==""  || Sub3.value=="") 
+
+      {
+        alert("No blank values allowed");
+        return false;
+      }
+
+      else
+      {
+        true;
+      }  
+        
+
+    }
+
+
+
+  </script>
+
+<body>
+
+
+  <form onsubmit="return validate();" action="JSvalidation2.html">
+    Phone Number:<br><br><input type="number" id="Phone Number">
+
+    Subject Interest:<br><br>
+    <input type="checkbox" id="dbms" value="dbms">DBMS<br><br> 
+    <input type="checkbox" id="dsa" value="dsa">DSA<br><br>
+    <input type="checkbox" id="iot" value="iot">IOT<br><br>
+
+    <button type="submit">Submit</button>
+
+
+  </form>
+
+</body>
+</html>
