@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Click the button to extract characters from the string.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var str = "HTML is the most basic building block of web. It defines the meaning and structure of a web content";
+  var res = str.substring(5,7,10);
+  document.getElementById("demo").innerHTML = res;
+}
+</script>
+
+</body>
+</html>
